@@ -18,18 +18,20 @@ while ttrue:
             
             s2="    "*c
             s1=s2+"#"+s1+"\n"
+            s4=s1+s2+"if value=="+sp[c]+":\n"+s2+"values="+sp[c]+"\n"
+            n4=len(s4)
             nn=code.find(s1)
             if nn<0:
                 
                 s3=code[:m]
-                s4=s1+s2+"if value=="+sp[c]+":\n"+s2+"values="+sp[c]+"\n"
-                n4=len(s4)
+                
+                
                 s3=s3+s4
                 s3=s3+code[m:]
                 code=s3
                 m=m+n4
             else:
-                m=nn+len(s1)+1
+                m=nn+n4+1
 
         print(code)
             
