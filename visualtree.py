@@ -22,9 +22,9 @@ while ttrue:
             if nn<0:
                 
                 s3=code[:m]
-                s4=s1+s2+"if value=="+sp[c]+":\nvalues="+sp[c]+"\n"
+                s4=s1+s2+"if value=="+sp[c]+":\n"+s2+"values="+sp[c]+"\n"
                 n4=len(s4)
-                s3=s3+s1+s2+"if value=="+sp[c]+":\nvalues="+sp[c]+"\n"
+                s3=s3+s4
                 s3=s3+code[m:]
                 code=s3
                 m=m+n4
